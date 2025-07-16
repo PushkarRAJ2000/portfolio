@@ -25,14 +25,29 @@
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>C, C++</li>
-      <li>Java, Python</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>MySQL, Git, GitHub</li>
-    </ul>
+  <h2>Skills</h2>
+  <select id="skillSelect" onchange="showProjectButton()">
+    <option value="">-- Select a skill --</option>
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Python">Python</option>
+    <option value="C++">C++</option>
+  </select>
+
+  <div id="projectLevelSection" style="display:none; margin-top: 10px;">
+    <button onclick="showLevels()">See Projects</button>
+  </div>
+
+  <div id="levelButtons" style="display:none; margin-top: 10px;">
+    <button onclick="showProjects('basic')">Basic</button>
+    <button onclick="showProjects('intermediate')">Intermediate</button>
+    <button onclick="showProjects('high')">High</button>
+  </div>
+
+  <div id="projectDisplay" style="margin-top: 15px;"></div>
   </section>
+  
 
   <section id="projects">
     <h2>Projects</h2>
