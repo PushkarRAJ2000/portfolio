@@ -25,29 +25,27 @@
   </section>
 
   <section id="skills">
-  <h2>Skills</h2>
-  <select id="skillSelect" onchange="showProjectButton()">
-    <option value="">-- Select a skill --</option>
-    <option value="HTML">HTML</option>
-    <option value="CSS">CSS</option>
-    <option value="JavaScript">JavaScript</option>
-    <option value="Python">Python</option>
-    <option value="C++">C++</option>
-  </select>
+    <h2>Skills</h2>
 
-  <div id="projectLevelSection" style="display:none; margin-top: 10px;">
-    <button onclick="showLevels()">See Projects</button>
-  </div>
+    <!-- Skill Dropdown -->
+    <select id="skillSelect" onchange="showProjectButton()">
+      <option value="">-- Select a skill --</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+      <option value="C++">C++</option>
+    </select>
 
-  <div id="levelButtons" style="display:none; margin-top: 10px;">
-    <button onclick="showProjects('basic')">Basic</button>
-    <button onclick="showProjects('intermediate')">Intermediate</button>
-    <button onclick="showProjects('high')">High</button>
-  </div>
+    <!-- Button will appear here -->
+    <div id="projectButtonContainer" style="margin-top: 10px;"></div>
 
-  <div id="projectDisplay" style="margin-top: 15px;"></div>
+    <!-- Levels will appear here -->
+    <div id="projectLevelsContainer" style="margin-top: 10px;"></div>
+
+    <!-- Final projects shown here -->
+    <div id="projectDisplay" style="margin-top: 15px;"></div>
   </section>
-  
 
   <section id="projects">
     <h2>Projects</h2>
@@ -67,30 +65,14 @@
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:pushkarrajmay2000@gmail.com">pushkarrajmay2000@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/pushkar-raj-06731a227" target="_blank">Pushkar Raj</a></p>
-    <p>GitHub: <a href="https://github.com/7488527687" target="_blank">7488527687</a></p>
+    <p>GitHub: <a href="https://github.com/PushkarRAJ2000" target="_blank">PushkarRAJ2000</a></p>
   </section>
 
   <footer>
-  <p>© 2025 Pushkar Raj | <a href="https://PushkarRAJ2000.github.io/portfolio/" target="_blank">Visit Portfolio Site</a></p>
+    <p>© 2025 Pushkar Raj | <a href="https://PushkarRAJ2000.github.io/portfolio/" target="_blank">Visit Portfolio Site</a></p>
   </footer>
-  <!-- Skill Dropdown -->
-<select id="skillSelect" onchange="showProjectButton()">
-  <option value="">-- Select a skill --</option>
-  <option value="HTML">HTML</option>
-  <option value="CSS">CSS</option>
-  <option value="JavaScript">JavaScript</option>
-  <option value="Python">Python</option>
-  <option value="C++">C++</option>
-</select>
 
-<!-- Button will appear here -->
-<div id="projectButtonContainer"></div>
-
-<!-- Levels will appear here -->
-<div id="projectLevelsContainer"></div>
-
-<!-- Final projects shown here -->
-<div id="projectDisplay"></div>
+  <!-- Correct Script Path -->
+  <script src="https://pushkarraj2000.github.io/portfolio/script.js"></script>
 </body>
-<script src="https://pushkarraj2000.github.io/portfolio/script.js"></script>
 </html>
