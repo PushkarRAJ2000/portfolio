@@ -22,7 +22,5 @@ function showProjectLevels(skill) {
 
 function showProjects(skill, level) {
   const display = document.getElementById("projectDisplay");
-
-  // Tum future me yahan apne actual projects daal sakte ho
   display.innerHTML = `<p>Showing ${level} projects for <strong>${skill}</strong></p>`;
 }
